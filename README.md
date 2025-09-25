@@ -1,6 +1,6 @@
 # Bingo Billionaires!
 
-## Gambling. NOt stopPing the addiction. Chapter one – the beginning begins...​
+## Gambling. Not Stoping The Addiction. Chapter One – The Beginning Begins...​
 
 # Code Changes
 Before changing code, please fork into your own branch.

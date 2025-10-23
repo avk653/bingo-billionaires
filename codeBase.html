@@ -35,12 +35,68 @@
 <a href = "#">Account</a>
 </div>
 <!-- add content for page here -->
-<div class = "content">
-<div class = "box">
+<section id = "base">
+    <div class = "content">
+<div class = "box" onClick = "createAccount()">
 <h2>create acount</h2>
 </div>
-<div class = "box">
+<div class = "box"onClick = "logIn()">
 <h2>Login</h2>
+</section>
+
+<section id = "signIn">
+<form>
+ <label for="uername">Username</label><br>
+ <input type="text" id="username" name="username" required><br>
+ 
+ <label for="password">Password</label><br>
+ <input type="password" id="password" name="password" required><br>
+  <input class = "submit1" type="submit" value="Log In">
+</form>
+<p onClick = "createAccount()" id = "green">Don't have an accoung <a href = "#"> Create one</a></p>
+</section>
+
+<section id = "createAccount">
+<h2>Create account</h2>
+<form class = "cAccount">
+<div class = "col1">
+<label for="fName">Full Name</label><br>
+ <input type="text" id="fName" name="fName" required><br>
+ 
+ <label for="eMail">Email</label><br>
+ <input type="email" id="eMail" name="eMail" required><br>
+ 
+ <label for="DOB">Date of Birth</label><br>
+ <input type="date" id="DOB" name="DOB" required><br>
+ 
+ <label for="uName">UserName</label><br>
+ <input type="text" id="uName" name="uName" required><br>
+ 
+ <label for="pWord">Password</label><br>
+ <input type="password" id="pWord" name="pWord" required><br>
+ 
+ <label for="pCode">Post Code</label><br>
+ <input type="text" id="pCode" name="pCode" required><br>
+ </div>
+ 
+ <div class = "col2">
+ <label for="acNum">Account Number</label><br>
+ <input type="number" id="acNum" name="acNum" required><br>
+ 
+ <label for="cardName">Name on Card</label><br>
+ <input type="text" id="cardName" name="ardName" required><br>
+ 
+ <label for="sCode">Sort Code</label><br>
+ <input type="number" id="sCode" name="sCode" required><br>
+ </div>
+
+ <input class = "submit2" type="submit" value="Create Account">
+ 
+ 
+ 
+</form>
+<p onClick = "logIn()">Already have an account <a href = "#"> Sign in</a></p>
+</section>
 
 </div>
 </div>

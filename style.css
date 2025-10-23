@@ -273,14 +273,33 @@ footer{
 	border-color: #21b82c;
 }
 
+#signIn a {
+    color: #29f237;
+}
+
 #signIn {
-	margin: 20px;
+	margin: auto;
 	line-height: 2em;
 	display: none;
+    padding-left: 50px;
+}
+
+#createAccount a{
+    color:#29f237;
+}
+
+#createAccount{
+    display:none;
 }
 
 .cAccount{
-	
+    margin-left: 140px;
+}
+
+.submit2{
+    margin-top: 100px;
+    background-color: #29f237;
+	border-color: #21b82c;
 }
 
 .col1{

@@ -160,6 +160,11 @@ body::after {
   }
 }
 
+@keyframes changeColor {
+  50% {background-color: #b1fab6;}
+  100% {background-color: #29f237;}
+}
+
 
 body{
 	background-image: url("https://media.tenor.com/cKgOapMuyWcAAAAM/coding-developer-code.gif");
@@ -342,4 +347,13 @@ col2{
   background-color: #1ac426;
   color:#031204;
   margin:auto;
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#getMoney{
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }

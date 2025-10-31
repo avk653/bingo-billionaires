@@ -309,3 +309,37 @@ footer{
 col2{
 	float:right;
 }
+
+#inAccount{
+  padding: 10px;
+}
+
+#inAccount a {
+  color: #29f237;
+}
+
+#inAccount p{
+  line-height: 0;;
+}
+
+.left{
+  width: 45%;
+  float:left;
+}
+
+.right{
+  width: 45%;
+  float:right;
+}
+
+#details{
+  display: none;
+  line-height: 0.9;
+}
+
+.back{
+  width: 90%;
+  background-color: #1ac426;
+  color:#031204;
+  margin:auto;
+}

@@ -10,3 +10,16 @@ function createAccount(){
     document.getElementById("createAccount").style.display = "block";
 }
 
+function details(){
+    document.getElementById("withdraw").style.display = "none";
+    document.getElementById("details").style.display = "block";
+}
+
+function withdraw(){
+    document.getElementById("withdraw").style.display = "block";
+    document.getElementById("details").style.display = "none";
+}
+
+function withdrawMoney(){
+    window.alert("Your Money has been withdrawn");
+}

@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <!-- sidebar that holds info about user-->
 <div class = "sidebar">
 <h2>Account</h2>
 <p>Joe</p>
@@ -24,17 +25,23 @@
 <p>2. lewis: £985.55</p>
 </div>
 
+<!-- main holds the main part of the page-->
 <div class = "main">
+  <!--header holds the title-->
 <header>
-
 <h1>Money Glitch Gambling</h1>
 </header>
+
+<!--Nav hold the navagation bar (I havn't added the links yet)-->
 <div class = "nav">
 <hr class = "line">
 <a href = "#">Games</a>
 <a href = "#">Account</a>
 </div>
-<!-- add content for page here -->
+
+<!-- base hold the first thing they will see when they go onto the site
+shows them the option to log in or create an account 
+-->
 <section id = "base">
     <div class = "content">
 <div class = "box" onClick = "createAccount()">
@@ -42,8 +49,12 @@
 </div>
 <div class = "box"onClick = "logIn()">
 <h2>Login</h2>
+</div>
 </section>
 
+<!--After they click sign in they will have to entere their username
+origonally not shown and has to click on log in
+-->
 <section id = "signIn">
 <form>
  <label for="uername">Username</label><br>
@@ -56,10 +67,16 @@
 <p onClick = "createAccount()" id = "green">Don't have an accoung <a href = "#"> Create one</a></p>
 </section>
 
+<!--After they click on create an account they will be shown all the things they need to add to create their account
+origonally not shown and has to click on create account
+may make it multiple stages as not to overwhelm the user
+-->
 <section id = "createAccount">
 <h2>Create account</h2>
 <form class = "cAccount">
+    <!--Everything in the form is mandatory-->
 <div class = "col1">
+    <!--Personal details-->
 <label for="fName">Full Name</label><br>
  <input type="text" id="fName" name="fName" required><br>
  
@@ -80,6 +97,9 @@
  </div>
  
  <div class = "col2">
+    <!-- bank details
+    may move to another page to make it less cluttered this would also help with the code to check the bank details
+    -->
  <label for="acNum">Account Number</label><br>
  <input type="number" id="acNum" name="acNum" required><br>
  

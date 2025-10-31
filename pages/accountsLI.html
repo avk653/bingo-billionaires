@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <!-- sidebar that holds info about user-->
 <div class = "sidebar">
 <h2>Account</h2>
 <p>Joe</p>
@@ -24,11 +25,14 @@
 <p>2. lewis: £985.55</p>
 </div>
 
+<!-- main holds the main part of the page-->
 <div class = "main">
+  <!--header holds the title-->
 <header>
-
 <h1>Money Glitch Gambling</h1>
 </header>
+
+<!--Nav hold the navagation bar (I havn't added the links yet)-->
 <div class = "nav">
 <hr class = "line">
 <a href = "#">Games</a>
@@ -36,8 +40,10 @@
 </div>
 <!-- add content for page here -->
 
+<!--Section for when they first log into account
+can withdraw money or look at their details
+-->
 <section id = "inAccount">
-
    <section id = "withdraw">
     <h2>Username</h2>
     <h3>Winnings: £00.00</h3>
@@ -46,11 +52,12 @@
 <h2>Withdraw</h2>
 </div>
 </a>
-
 <p><a href = "#" onClick = "details()">Personal details</a></p>
-
   </section>
   
+<!-- section that shows the user their details
+origonally not shown but can be once you click on personal details in the withdraw section 
+-->
   <section id= "details">
     <a href = "#">
     <div class = "back" onClick ="withdraw()">

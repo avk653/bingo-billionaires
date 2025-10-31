@@ -9,6 +9,7 @@ Check with others in the group before merging to the master branch.
 
 # HTML Code
 I have moved all the html code and other things into pages to keep it all together
+none of the pages are adaptive as of yet and none of them have many comments but I will add that soon
 the base code file is just a page without any content
 accountsLO is the page for accounts with them logged out
 accountsLI is the page for the accounts with them logged in

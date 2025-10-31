@@ -7,6 +7,8 @@ Before changing code, please fork into your own branch.
 
 Check with others in the group before merging to the master branch.
 
-# Base HTML file
-The base html file has the basic layout for the html with the style css file
-It has the layout for the accounts page(s) but to get this to work you will also need the script.js javascript file
+# HTML Code
+I have moved all the html code and other things into pages to keep it all together
+the base code file is just a page without any content
+accountsLO is the page for accounts with them logged out
+accountsLI is the page for the accounts with them logged in (still need to add it but it is mainly finished)

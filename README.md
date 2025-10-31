@@ -12,3 +12,8 @@ I have moved all the html code and other things into pages to keep it all togeth
 the base code file is just a page without any content
 accountsLO is the page for accounts with them logged out
 accountsLI is the page for the accounts with them logged in
+
+## pages still need to do
+- [ ] change details
+- [ ] add spending limit
+- [ ] information/instruction page/pop up

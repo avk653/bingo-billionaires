@@ -357,3 +357,43 @@ col2{
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+
+.changeDetails a{
+  color:#29f237;
+}
+
+.changeDetails{
+  width: 50%;
+  float:left;
+}
+
+#saveChanges{
+  margin-top: 5px;
+}
+
+.changeBank a {
+  color:#29f237;
+}
+
+.changeBank{
+  width: 45%;
+  float:right;
+}
+
+#changePassword{
+  display:none;
+}
+
+#changebankDetails{
+  display: none;
+}
+
+#changePassword{
+  line-height: 1.5em;
+}
+
+.submitP{
+  margin-top: 5px;
+   background-color: #29f237;
+	border-color: #21b82c;
+}

@@ -31,3 +31,24 @@ function withdraw(){
 function withdrawMoney(){
     window.alert("Your Money has been withdrawn");
 }
+
+//displpays the page where the user can change their personal details
+function changePersonal(){
+ document.getElementById("changePersonal").style.display = "block";
+    document.getElementById("changebankDetails").style.display = "none";
+    document.getElementById("changePassword").style.display = "none";   
+}
+
+//dispkays the page where the user can change their password
+function changePWord(){
+ document.getElementById("changePersonal").style.display = "none";
+    document.getElementById("changebankDetails").style.display = "none";
+    document.getElementById("changePassword").style.display = "block";   
+}
+
+//will display the page where the user can change their bank details
+function changeBank(){
+ document.getElementById("changePersonal").style.display = "none";
+    document.getElementById("changebankDetails").style.display = "block";
+    document.getElementById("changePassword").style.display = "none";   
+}

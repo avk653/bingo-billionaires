@@ -397,3 +397,7 @@ col2{
    background-color: #29f237;
 	border-color: #21b82c;
 }
+
+#setLimit {
+  display: none;
+}

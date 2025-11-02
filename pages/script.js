@@ -62,3 +62,8 @@ function changeBank(){
     document.getElementById("changebankDetails").style.display = "block";
     document.getElementById("changePassword").style.display = "none";   
 }
+
+//a pop up that displays the instuctions
+function instructions(){
+    window.alert("You will see two grids. The one on the left is your numbers, these will not change and you will need to look out for them. The grid on the right is hwere numbers wil pop up. If these numbers match the ones on your grid click them. If you get all the numbers before the time runs out you win and get that money you desperatly need");
+}

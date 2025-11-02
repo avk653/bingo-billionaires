@@ -16,6 +16,15 @@ function createAccount(){
 function details(){
     document.getElementById("withdraw").style.display = "none";
     document.getElementById("details").style.display = "block";
+    document.getElementById("setLimit").style.display = "none";
+}
+
+//displays the page where the users can change their spending limit
+function setLimit(){
+    document.getElementById("withdraw").style.display = "none";
+    document.getElementById("details").style.display = "none";
+    document.getElementById("setLimit").style.display = "block";
+
 }
 
 //displays the page that the users will see once they log in or click on the accounts tab
@@ -23,6 +32,7 @@ function details(){
 function withdraw(){
     document.getElementById("withdraw").style.display = "block";
     document.getElementById("details").style.display = "none";
+    document.getElementById("setLimit").style.display = "none";
 }
 
 //displays a message saying the user has withdrawn their money

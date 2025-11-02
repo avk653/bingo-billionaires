@@ -13,8 +13,4 @@ none of the pages are adaptive as of yet and they only have a few basic comments
 the base code file is just a page without any content
 accountsLO is the page for accounts with them logged out
 accountsLI is the page for the accounts with them logged in
-
-## pages still need to do
-- [ ] change details
-- [ ] add spending limit
-- [ ] information/instruction page/pop up
+changeDetails is a page where the users can edit their details

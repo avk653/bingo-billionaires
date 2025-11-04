@@ -67,3 +67,21 @@ function changeBank(){
 function instructions(){
     window.alert("You will see two grids. The one on the left is your numbers, these will not change and you will need to look out for them. The grid on the right is hwere numbers wil pop up. If these numbers match the ones on your grid click them. If you get all the numbers before the time runs out you win and get that money you desperatly need");
 }
+
+//pop up that is more stylalised to show instructions
+const myPopup = new Popup({
+    id: "my-popup",
+    title: "Instructions",
+    widthMultiplier: 0.7,
+    backgroundColor: "#031204",
+    titleColor: "#1ac426",
+    textColor: "#1ac426",
+    closeColor: "#1ac426",
+    borderWidth: "5px",
+    borderColor: "#1ac426",
+    font: "Courier New",
+    content: `
+        add instructions for game here
+        click on the numbers when you see them
+        if they match the one on your grid.`,
+});

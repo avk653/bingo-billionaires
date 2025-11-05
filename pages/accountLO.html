@@ -3,7 +3,6 @@
 <head>
 
 <link rel="stylesheet" href ="style.css">
-
 <script src="script.js"></script>
 </head>
 
@@ -58,10 +57,10 @@ origonally not shown and has to click on log in
 <section id = "signIn">
 <form>
  <label for="uername">Username</label><br>
- <input type="text" id="username" name="username" required><br>
+ <input type="text" id="username" name="username" required placeholder = "username"><br>
  
  <label for="password">Password</label><br>
- <input type="password" id="password" name="password" required><br>
+ <input type="password" id="password" name="password" required placeholder = "Password"><br>
   <input class = "submit1" type="submit" value="Log In">
 </form>
 <p onClick = "createAccount()" id = "green">Don't have an accoung <a href = "#"> Create one</a></p>
@@ -73,27 +72,30 @@ may make it multiple stages as not to overwhelm the user
 -->
 <section id = "createAccount">
 <h2>Create account</h2>
-<form class = "cAccount">
+<form class = "cAccount" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
     <!--Everything in the form is mandatory-->
 <div class = "col1">
     <!--Personal details-->
 <label for="fName">Full Name</label><br>
- <input type="text" id="fName" name="fName" required><br>
+ <input type="text" id="fName" name="fName" required placeholder = "enter name"><br>
  
  <label for="eMail">Email</label><br>
- <input type="email" id="eMail" name="eMail" required><br>
+ <input type="email" id="eMail" name="eMail" required placeholder = "enter email"><br>
  
  <label for="DOB">Date of Birth</label><br>
  <input type="date" id="DOB" name="DOB" required><br>
  
  <label for="uName">UserName</label><br>
- <input type="text" id="uName" name="uName" required><br>
+ <input type="text" id="uName" name="uName" required placeholder = "Enter username"><br>
  
- <label for="pWord">Password</label><br>
- <input type="password" id="pWord" name="pWord" required><br>
+ <label for="p1">Password</label><br>
+ <input type="password" id="p1" name="p1" required placeholder = "Enter password"><br>
+
+ <label for="p2">Password</label><br>
+ <input type="password" id="p2" name="p2" required placeholder = "Confirm password"><br>
  
  <label for="pCode">Post Code</label><br>
- <input type="text" id="pCode" name="pCode" required><br>
+ <input type="text" id="pCode" name="pCode" required placeholder = "Enter postcode"><br>
  </div>
  
  <div class = "col2">
@@ -101,13 +103,13 @@ may make it multiple stages as not to overwhelm the user
     may move to another page to make it less cluttered this would also help with the code to check the bank details
     -->
  <label for="acNum">Account Number</label><br>
- <input type="number" id="acNum" name="acNum" required><br>
+ <input type="number" id="acNum" name="acNum" required placeholder = "Enter account Number"<><br>
  
  <label for="cardName">Name on Card</label><br>
- <input type="text" id="cardName" name="ardName" required><br>
+ <input type="text" id="cardName" name="cardName" required placeholder = "Enter name on card"><br>
  
  <label for="sCode">Sort Code</label><br>
- <input type="number" id="sCode" name="sCode" required><br>
+ <input type="number" id="sCode" name="sCode" required placeholder = "enter sort code"><br>
  </div>
 
  <input class = "submit2" type="submit" value="Create Account">

@@ -3,8 +3,8 @@
 <head>
 
 <link rel="stylesheet" href ="style.css">
-
 <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
 </head>
 
 <body>
@@ -68,9 +68,10 @@
 <section id = "changebankDetails">
     
 <p class = "changeBank"><a href = "#" onClick = "changePersonal()">Change Personal Details</a></p>
-<form class = "changeDetails">
- <label for="acNum">Account Number</label><br>
- <input type="number" id="acNum" name="acNum" required value = 1000><br>
+<form class = "changeDetails" name="bank" action="/action_page.php" onsubmit="return checkAge()" method="post">
+
+  <label for="acNum" id = "anLabel">Account Number</label><br>
+ <input type="text" id="acNum" class = "acNum" name="acNum" required value = 1000><br>
  
  <label for="cardName">Name on Card</label><br>
  <input type="text" id="cardName" name="ardName" required value = "john Doe"><br>
@@ -85,11 +86,11 @@
 <section id = "changePassword">
     
 <p class = "changeBank"><a href = "#" onClick = "changePersonal()">Change Personal Details</a></p>
-    <form class = changeDetails>
+    <form class = "changeDetails" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
         <label for ="P1">Password</label> <br>
         <input type = "password" id = "p1" name = "p1" requried><br>
-        <label for ="P3">Confirm Password</label><br>
-        <input type = "password" id = "p2" name = "p2" requried><br>
+        <label for ="P2">Confirm Password</label><br>
+        <input type = "password" id = "p2" name = "p2"><br>
         <input class = "submitP" type="submit" value="Reset Password">
     </form>
 </section>

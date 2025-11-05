@@ -85,3 +85,33 @@ const myPopup = new Popup({
         click on the numbers when you see them
         if they match the one on your grid.`,
 });
+
+//checks that passwords match
+function validateForm() {
+  let x = document.forms["myForm"]["p1"].value;
+  let y =  document.forms["myForm"]["p2"].value;
+  if (x != y) {
+    alert("Passwords must match");
+    return false;
+  }
+} 
+
+//simulates checking the bank account to see if they are old enough
+//since we are not looking at real account we just see if the last numbers are 02
+//if they are 01 then they are underage
+//simulates checking if bank details are valid
+//if it starts in 11 then the account isn't valid
+function checkAge() {
+    let x = (document.forms["bank"]["acNum"].value).toString();;
+    let check1 = x.slice(0, 2);
+    if (check1 == "11"){
+       alert ("bank account not valid");
+    }
+    
+    let top = x.length;
+    let bottom = (x.length) - 2;
+    let check = x.slice(bottom, top);
+    if (check == "02"){
+       alert ("you are not old enough");
+    }
+}

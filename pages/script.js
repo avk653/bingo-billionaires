@@ -87,6 +87,7 @@ const myPopup = new Popup({
 });
 
 //checks that passwords match
+//checks bank acount info is valid
 function validateForm() {
   let x = document.forms["myForm"]["p1"].value;
   let y =  document.forms["myForm"]["p2"].value;
@@ -94,6 +95,19 @@ function validateForm() {
     alert("Passwords must match");
     return false;
   }
+
+  let l = (document.forms["myForm"]["acNum"].value).toString();;
+    let check1 = l.slice(0, 2);
+    if (check1 == "11"){
+       alert ("bank account not valid");
+    }
+    
+    let top = l.length;
+    let bottom = (l.length) - 2;
+    let check = l.slice(bottom, top);
+    if (check == "02"){
+       alert ("you are not old enough");
+    }
 } 
 
 //simulates checking the bank account to see if they are old enough

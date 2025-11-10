@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" href ="style.css">
 
+
 <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
 <script src="script.js"></script>
 </head>
@@ -49,7 +50,7 @@ can withdraw money or look at their details
     <h2>Username</h2>
     <h3>Winnings: £00.00</h3>
     <a href = "#">
-    <div class = "box" onClick = "withdrawMoney()" id = "getMoney">
+    <div class = "box" onClick = "popWithdraw.show();" id = "getMoney">
 <h2>Withdraw</h2>
 </div>
 </a>
@@ -71,8 +72,9 @@ origonally not shown but can be once you click on personal details in the withdr
 <h2>Username</h2>
 <h3>Ballance</h3>
 <p>£00.00</p>
+<p><a href = "#" onClick = "deposite()">Deposite money</a></p>
 <h3>Spending Allowance</h3>
-<p><a href = "#">Set Allowance</a></p>
+<p><a href = "#" onClick = "setLimit()">Set Allowance</a></p>
 <h3>Points</h3>
 <p>69</p>
 <h3>Winnings</h3>
@@ -94,7 +96,7 @@ origonally not shown but can be once you click on personal details in the withdr
  </div>
  </section>
 
-  <!--Section where the usesr can change their spending limit-->
+ <!--Section where the usesr can change their spending limit-->
  <section id = "setLimit">
 <h2>Spending limit</h2>
 <p>When you set your spending limit we will warn you when you hit it</p>
@@ -103,10 +105,23 @@ origonally not shown but can be once you click on personal details in the withdr
    <!--shows their current spending limit or is left empty if they havn't set anything-->
  <input type="number" id="SLimit" name="SLimit" required value = 1000><br>
  <input class = "submitP" type="submit" value="update Limit">
+ <p> <a href = "#" onClick = "details()"> back</a></p>
 </form>
 
  </section>
 
+ <!--page where they can diposite money-->
+ <section id = "dipositeMoney">
+<h2>Diposite Money</h2>
+<p>Diposite your money to spend it</p>
+<form>
+   <label for="diposite">Enter amount you wish to deposite</label><br>
+ <input type="number" id="diposite" name="diposite" required><br>
+ <input class = "submitP" type="submit" value="Diposite Money">
+ <p> <a href = "#" onClick = "details()"> back</a></p>
+</form>
+
+ </section>
 </section>
 
 </div>
@@ -118,4 +133,3 @@ origonally not shown but can be once you click on personal details in the withdr
 </footer>
 </div>
 </body>
-</html>

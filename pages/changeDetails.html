@@ -41,7 +41,8 @@
 <h2>Change Details</h2>
 
 <section id = "changePersonal">
-<p class = "changeBank"><a href = "#" onClick="changeBank()">Edit bank details</a></p>
+<p class = "changeBank"><a href = "#" onClick="changeBank()">Edit bank details</a><br>
+<a href = "#" onClick="popDelete.show();">Delete account</a></p>
 
 <form class = "changeDetails">
 <label for="fName">Full Name</label><br>
@@ -71,7 +72,7 @@
 <form class = "changeDetails" name="bank" action="/action_page.php" onsubmit="return checkAge()" method="post">
 
   <label for="acNum" id = "anLabel">Account Number</label><br>
- <input type="text" id="acNum" class = "acNum" name="acNum" required value = 1000><br>
+ <input type="text" id="acNum" class = "acNum" name="acNum" required value = 1000 maxlength ="11" minlength="11"><br>
  
  <label for="cardName">Name on Card</label><br>
  <input type="text" id="cardName" name="ardName" required value = "john Doe"><br>

@@ -17,6 +17,7 @@ function details(){
     document.getElementById("withdraw").style.display = "none";
     document.getElementById("details").style.display = "block";
     document.getElementById("setLimit").style.display = "none";
+    document.getElementById("dipositeMoney").style.display = "none";
 }
 
 //displays the page where the users can change their spending limit
@@ -24,6 +25,8 @@ function setLimit(){
     document.getElementById("withdraw").style.display = "none";
     document.getElementById("details").style.display = "none";
     document.getElementById("setLimit").style.display = "block";
+    
+    document.getElementById("dipositeMoney").style.display = "none";
 
 }
 
@@ -33,6 +36,16 @@ function withdraw(){
     document.getElementById("withdraw").style.display = "block";
     document.getElementById("details").style.display = "none";
     document.getElementById("setLimit").style.display = "none";
+    
+    document.getElementById("dipositeMoney").style.display = "none";
+}
+
+//shows the page where you deposite money
+function deposite(){
+    document.getElementById("withdraw").style.display = "none";
+    document.getElementById("details").style.display = "none";
+    document.getElementById("setLimit").style.display = "none";
+    document.getElementById("dipositeMoney").style.display = "block";
 }
 
 //displays a message saying the user has withdrawn their money
@@ -129,3 +142,54 @@ function checkAge() {
        alert ("you are not old enough");
     }
 }
+
+//pop up asking if they user want to delete their account
+const popDelete= new Popup({
+    id: "delete",
+    title: "a",
+    hideTitle: true,
+    widthMultiplier: 0.7,
+    backgroundColor: "#031204",
+    titleColor: "#1ac426",
+    textColor: "#1ac426",
+    closeColor: "#1ac426",
+    borderWidth: "2px",
+    borderColor: "#1ac426",
+    borderRadius: 0,
+    font: "Courier New",
+    loadCallback: () => {
+        const button = document.querySelector(".popup-button");
+        button.addEventListener("click", () => {
+            popDelete.hide();
+            popADelete.show();
+        });
+    },
+    content: `
+         are you sure you want to delete your account
+         any money not withdrawn will be lost
+          {btn-popup-button}[Confirm]`,
+     css: `
+        .popup.delete .popup-content .popup-button{
+            background-color: #1ac426 !important;
+            border-radius: 0px !important;
+            border-color: #21b82c !important;
+        }`,
+});
+
+//pop up telling the user their account has been deleted
+const popADelete= new Popup({
+    id: "my-popup",
+    title: " ",
+    hideTitle: true,
+    widthMultiplier: 0.5,
+    backgroundColor: "#031204",
+    titleColor: "#1ac426",
+    textColor: "#1ac426",
+    closeColor: "#1ac426",
+    borderWidth: "2px",
+    borderColor: "#1ac426",
+    borderRadius: 0,
+    font: "Courier New",
+    content: `
+         account deleted`,
+});

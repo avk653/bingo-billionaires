@@ -177,10 +177,12 @@ const popDelete= new Popup({
 });
 
 //pop up telling the user their account has been deleted
+//after they get sent to logged out page
 const popADelete= new Popup({
-    id: "my-popup",
+    id: "close",
     title: " ",
     hideTitle: true,
+    hideCloseButton: true,
     widthMultiplier: 0.5,
     backgroundColor: "#031204",
     titleColor: "#1ac426",
@@ -190,6 +192,20 @@ const popADelete= new Popup({
     borderColor: "#1ac426",
     borderRadius: 0,
     font: "Courier New",
+    loadCallback: () => {
+        const button = document.querySelector(".popup-button1");
+        button.addEventListener("click", () => {
+            popADelete.hide();
+            window.location.href = "accountsLo.html";
+        });
+    },
     content: `
-         account deleted`,
+         Account Deleted
+          {btn-popup-button1}[Close]`,
+     css: `
+        .popup.close .popup-content .popup-button1{
+            background-color: #1ac426 !important;
+            border-radius: 0px !important;
+            border-color: #21b82c !important;
+        }`,
 });

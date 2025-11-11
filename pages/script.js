@@ -182,6 +182,7 @@ const popADelete= new Popup({
     id: "close",
     title: " ",
     hideTitle: true,
+    allowClose: false,
     hideCloseButton: true,
     widthMultiplier: 0.5,
     backgroundColor: "#031204",

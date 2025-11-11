@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href ="style.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+<script src="script.js"></script>
+</head>
+
+<body>
+  <!-- sidebar that holds info about user-->
+<div class = "sidebar">
+<h2>Account</h2>
+<p>Joe</p>
+<h2>Ballance</h2>
+<p>£106.85</p>
+<h2>spending alowance</h2>
+<p>not set</p>
+<h2>points</h2>
+<p>22</p>
+<h2>winnings</h2>
+<p>£70.00</0>
+<h2>Leaderboard</h2>
+<p id = "one">1. micheal: £1002.52<br>
+<p>2. lewis: £985.55</p>
+</div>
+
+<!-- main holds the main part of the page-->
+<div class = "main">
+  <!--header holds the title-->
+<header>
+<h1>Money Glitch Gambling</h1>
+</header>
+
+<!--Nav hold the navagation bar (I havn't added the links yet)-->
+<div class = "nav">
+<hr class = "line">
+<a href = "#">Games</a>
+<a href = "#">Account</a>
+</div>
+<!-- add content for page here -->
+
+<!--Section for when they first log into account
+can withdraw money or look at their details
+-->
+<section id = "inAccount">
+   <section id = "withdraw">
+    <h2>Username</h2>
+    <h3>Winnings: £00.00</h3>
+    <a href = "#">
+    <div class = "box" onClick = "popWithdraw.show();" id = "getMoney">
+<h2>Withdraw</h2>
+</div>
+</a>
+<p><a href = "#" onClick = "details()">Personal details</a></p>
+<!--this is a pop up that explians the instruction will probably move somewhere elses on the website-->
+<p onClick = "myPopup.show();"> <a href = "#">Instruction</a></p>
+  </section>
+  
+<!-- section that shows the user their details
+origonally not shown but can be once you click on personal details in the withdraw section 
+-->
+  <section id= "details">
+    <a href = "#">
+    <div class = "back" onClick ="withdraw()">
+    <h3>WITHDRAW YOUR MONEY AT ANYTIME</h3>
+  </div> 
+  </a>
+  <div class = "left">
+<h2>Username</h2>
+<h3>Ballance</h3>
+<p>£00.00</p>
+<p><a href = "#" onClick = "deposite()">Deposite money</a></p>
+<h3>Spending Allowance</h3>
+<p><a href = "#" onClick = "setLimit()">Set Allowance</a></p>
+<h3>Points</h3>
+<p>69</p>
+<h3>Winnings</h3>
+<p>£00.00</p>
+</div>
+<div class = "right">
+
+  <h2>Personal details</h2>
+  <h3>Password</h3>
+  <p><a href = "changeDetails.html">Change password</a></p>
+  <h3>Email</h3>
+  <p>Email@email.com</p>
+  <h3>Banking details</h3>
+  <p>********00</p>
+  <h3>Address</h3>
+  <p>PostCode</p>
+  <p><a href = "changeDetails.html">Change details</a></p>
+ 
+ </div>
+ </section>
+
+ <!--Section where the usesr can change their spending limit-->
+ <section id = "setLimit">
+<h2>Spending limit</h2>
+<p>When you set your spending limit we will warn you when you hit it</p>
+<form>
+   <label for="Slimit">Spending Limit</label><br>
+   <!--shows their current spending limit or is left empty if they havn't set anything-->
+ <input type="number" id="SLimit" name="SLimit" required value = 1000><br>
+ <input class = "submitP" type="submit" value="update Limit">
+ <p> <a href = "#" onClick = "details()"> back</a></p>
+</form>
+
+ </section>
+
+ <!--page where they can diposite money-->
+ <section id = "dipositeMoney">
+<h2>Diposite Money</h2>
+<p>Diposite your money to spend it</p>
+<form>
+   <label for="diposite">Enter amount you wish to deposite</label><br>
+ <input type="number" id="diposite" name="diposite" required><br>
+ <input class = "submitP" type="submit" value="Diposite Money">
+ <p> <a href = "#" onClick = "details()"> back</a></p>
+</form>
+
+ </section>
+</section>
+
+</div>
+</div>
+</div>
+<footer>
+<p>footer<br>
+<small>please gamble responsibly</small></p>
+</footer>
+</div>
+</body>

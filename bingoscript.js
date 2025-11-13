@@ -10,4 +10,24 @@ const grid = document.getElementById('grid');
       const cell = document.createElement('div');
       cell.classList.add('cell');
       grid.appendChild(cell);
+
     }
+
+
+// Function to generate a random integer between min and max (inclusive)
+function getRandomInt(min, max) {
+        if (typeof min !== 'number' || typeof max !== 'number' || min > max) {
+            console.error("Invalid range for random number generation.");
+            return 0;
+        }
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // Function to update the square with a random number
+function generateRandomNumber() {
+        const randomNum = getRandomInt(1, 100); // Change range here if needed
+        document.getElementByClass('num').textContent = randomNum;
+    }
+
+// Generate a number when the page loads
+window.onload = generateRandomNumber;

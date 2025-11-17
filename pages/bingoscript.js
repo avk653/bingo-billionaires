@@ -4,30 +4,20 @@ const startButton = document.getElementById('startButton');
 const restartButton = document.getElementById('restartButton');
 const timeDisplay = document.getElementById('time');
 
-const grid = document.getElementById('grid');
-    const gridSize = 81; // 9x9 grid
-    for (let i = 0; i < gridSize; i++) {
-      const cell = document.createElement('div');
-      cell.classList.add('cell');
-      grid.appendChild(cell);
-
-    }
 
 
-// Function to generate a random integer between min and max (inclusive)
-function getRandomInt(min, max) {
-        if (typeof min !== 'number' || typeof max !== 'number' || min > max) {
-            console.error("Invalid range for random number generation.");
-            return 0;
-        }
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+// generate random numbers to appear on the grid at a 1s interval
+const intervalTime = 1000; 
+function generateRandomNum() {
+   return Math.random();}
 
-    // Function to update the square with a random number
-function generateRandomNumber() {
-        const randomNum = getRandomInt(1, 100); // Change range here if needed
-        document.getElementByClass('num').textContent = randomNum;
-    }
+function generateRandomPos() {
+    return Math.random(0, 81); }
 
-// Generate a number when the page loads
-window.onload = generateRandomNumber;
+const number = document.getElementsByClassName("num");
+
+setInterval(
+    function () {
+    // A number appears 
+   number[generateRandomPos()].innerHTML  = generateRandomNum();} 
+   , intervalTime );

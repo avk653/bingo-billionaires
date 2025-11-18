@@ -14,6 +14,7 @@
 
             
             <main>
+                <div class="game-wrapper">
                 <div class="game-container">
                     <div class="square" id="square1"><div class="num"></div></div>
                     <div class="square" id="square2"><div class="num"></div></div>
@@ -97,8 +98,9 @@
                     <div class="square" id="square80"><div class="num"></div></div>
                     <div class="square" id="square81"><div class="num"></div></div>
                 </div>
-
-                <div class = "static sheet">
+                
+                <div class = "right">
+                <div class = "static_sheet">
                     <div class="filledsquare" id="filledsquare1"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare2"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare3"><div class="numStat">X</div></div>
@@ -129,6 +131,16 @@
                     <div class="filledsquare" id="filledsquare28"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare29"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare30"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare31"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare32"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare33"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare34"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare35"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare36"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare37"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare38"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare39"><div class="numStat">X</div></div>
+                    <div class="filledsquare" id="filledsquare40"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare41"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare42"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare43"><div class="numStat">X</div></div>
@@ -171,17 +183,16 @@
                     <div class="filledsquare" id="filledsquare80"><div class="numStat">X</div></div>
                     <div class="filledsquare" id="filledsquare81"><div class="numStat">X</div></div>
                 </div>
-            
-        <div class="scoreboard">
-            <p>Score: <span id="score">0</span></p>
-            <p>Time Left: <span id="time">30</span> seconds</p>
-        </div>
-
-        <div class="button-bar">
-            <button id="startButton">START</button>
-            <button id="restartButton">Restart</button>
-        </div>
         
+            <div class="scoreboard">
+                <p>Score: <span id="score">0</span></p>
+                <p>Time Left: <span id="time">30</span> seconds</p>
+
+                <button id="startButton">START</button>
+                <button id="restartButton">Restart</button>
+            </div>
+            
+        </div>
         <div 
             id="gameOverMessage" class="game-over-message">Game Over!
         </div>

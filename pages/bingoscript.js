@@ -44,6 +44,8 @@ function peep() {
     
         square.classList.remove('up');
         numDiv.textContent = " ";
+    
+
     if (!timeUp) peep();
     }, time);
 }

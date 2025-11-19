@@ -362,21 +362,31 @@ footer {
 }
 
 .cAccount {
-  margin-left: 140px;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
 }
 
 .submit2 {
-  margin-top: 20px; clear: both;
+  margin-top: 20px;
+  clear: both;
   background-color: #29f237;
   border-color: #21b82c;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
 .col1 {
   float: left;
+  width: 48%;
 }
 
 .col2 {
   float: right;
+  width: 48%;
 }
 
 #inAccount {

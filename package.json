@@ -1,0 +1,16 @@
+{
+  "name": "bingo-billionaires",
+  "version": "1.0.0",
+  "description": "A web-based Bingo game with account management",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["bingo", "game", "gambling"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

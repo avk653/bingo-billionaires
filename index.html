@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Billionaires - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #ccc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #888;
+        }
+        
+        .menu {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .menu-item {
+            background: #222;
+            padding: 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s;
+            min-width: 200px;
+        }
+        
+        .menu-item:hover {
+            background: #333;
+            transform: translateY(-5px);
+        }
+        
+        .menu-item h2 {
+            margin: 0 0 0.5rem 0;
+        }
+        
+        .menu-item p {
+            margin: 0;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            background: #000;
+        }
+        
+        footer small {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bingo Billionaires!</h1>
+        <p class="tagline">Gambling. Not Stopping The Addiction.</p>
+        
+        <div class="menu">
+            <a href="/pages/bingo.html" class="menu-item">
+                <h2>Play Bingo</h2>
+                <p>Start the game</p>
+            </a>
+            
+            <a href="/pages/accountLO.html" class="menu-item">
+                <h2>Account</h2>
+                <p>Login or Sign Up</p>
+            </a>
+            
+            <a href="/pages/base.html" class="menu-item">
+                <h2>Dashboard</h2>
+                <p>View your stats</p>
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Bingo Billionaire<br>
+        <small>please gamble responsibly</small></p>
+    </footer>
+</body>
+</html>

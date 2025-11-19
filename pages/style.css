@@ -167,115 +167,120 @@ body::after {
 
 
 body{
-	background-image: url("https://i.pinimg.com/originals/29/c6/8c/29c68c38857c0c994ec565ad2dd15776.gif");
-	background-size: 100%;
-	font-family: Courier New;
+        background-image: url("https://i.pinimg.com/originals/29/c6/8c/29c68c38857c0c994ec565ad2dd15776.gif");
+        background-size: 100%;
+        font-family: Courier New;
 }
 
 header{
-	animation: textShadow 1.6s infinite;
-	text-align: left;
+        animation: textShadow 1.6s infinite;
+        text-align: center;
 }
 
 .sidebar{
-	width: 200px;
-	float:left;
-	color:#29f237;
-	background-color:#031204;
-	margin-left: 75px;
-	padding: 5px;
-	
-	border-style: solid;
-	border-color: #29f237;
-	border-top-width: 2px;
-	border-left-width: 5px;
-	border-bottom-width: 5px;
-	border-right-width: 2px;
+        width: 200px;
+        float:left;
+        color:#29f237;
+        background-color:#031204;
+        margin-left: 75px;
+        padding: 5px;
+        
+        border-style: solid;
+        border-color: #29f237;
+        border-top-width: 2px;
+        border-left-width: 5px;
+        border-bottom-width: 5px;
+        border-right-width: 2px;
 }
 
 .sidebar h2{
-	margin: 0px;
+        margin: 0px;
 }
 
 .sidebar p {
-	margin-top: 0px;
+        margin-top: 0px;
 }
 
 #one{
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+
+#title{
+  text-align: center;
+}
+  
 }
 .main{
-	width: 800px;
-	margin: auto;
-	color:#29f237;
-	background-color:#031204;
-	text-align: center;
-	margin-top: 75px;
-	padding: 10px;
-	min-height: 500px;
-	
-	border-style: solid;
-	border-color: #29f237;
-	border-top-width: 2px;
-	border-left-width: 5px;
-	border-bottom-width: 5px;
-	border-right-width: 2px;	
+        width: 800px;
+        margin: auto;
+        color:#29f237;
+        background-color:#031204;
+        text-align: center;
+        margin-top: 75px;
+        padding: 10px;
+        min-height: 500px;
+        
+        border-style: solid;
+        border-color: #29f237;
+        border-top-width: 2px;
+        border-left-width: 5px;
+        border-bottom-width: 5px;
+        border-right-width: 2px;        
 }
 
 .nav a{
-	width: 275px;
-	display: inline-block;
-	padding-top: 15px;
-	padding-bottom: 5px;
-	color:#29f237;
-	text-decoration: none;
-	border-radius: 5px;
-	margin: 0px;
+        width: 275px;
+        display: inline-block;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        color:#29f237;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0px;
 }
 
 .nav{
-	margin-bottom: 15px;
+        margin-bottom: 15px;
 }
 
 .nav a:hover{
-	background-color:#29f237;
-	color: #031204;
+        background-color:#29f237;
+        color: #031204;
 }
 
 .line{
-	color:#29f237;
-	width: 100%;
+        color:#29f237;
+        width: 100%;
 }
 
 .box{
-	width: 35%;
-	display: inline-block;
-	background-color: #29f237;
-	color: #031204;
-	margin: 50px;
-	text-align:center;
-	padding-bottom: 30px;
-	border-radius: 5px;
+        width: 35%;
+        display: inline-block;
+        background-color: #29f237;
+        color: #031204;
+        margin: 50px;
+        text-align:center;
+        padding-bottom: 30px;
+        border-radius: 5px;
 }
 
 .box:hover{
-	background-color:#1ac426;
+        background-color:#1ac426;
 }
 
 footer{
-	color:#031204;
-	background-color:#29f237;
-	width: 800px;
-	margin:auto;
-	margin-top: 10px;
+        color:#031204;
+        background-color:#29f237;
+        width: 800px;
+        margin:auto;
+        margin-top: 10px;
 }
 
 .submit1 {
-	margin: 10px;
-	background-color: #29f237;
-	border-color: #21b82c;
+        margin: 10px;
+        background-color: #29f237;
+        border-color: #21b82c;
 }
 
 #signIn a {
@@ -283,9 +288,9 @@ footer{
 }
 
 #signIn {
-	margin: auto;
-	line-height: 2em;
-	display: none;
+        margin: auto;
+        line-height: 2em;
+        display: none;
     padding-left: 50px;
 }
 
@@ -304,15 +309,15 @@ footer{
 .submit2{
     margin-top: 100px;
     background-color: #29f237;
-	border-color: #21b82c;
+        border-color: #21b82c;
 }
 
 .col1{
-	float:left;
+        float:left;
 }
 
 col2{
-	float:right;
+        float:right;
 }
 
 #inAccount{
@@ -395,7 +400,7 @@ col2{
 .submitP{
   margin-top: 5px;
    background-color: #29f237;
-	border-color: #21b82c;
+        border-color: #21b82c;
 }
 
 #setLimit {

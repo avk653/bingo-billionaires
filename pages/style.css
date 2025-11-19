@@ -225,13 +225,17 @@ header {
 .logo-left{
   width: 60px;
   height: 60px;
-  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
 .logo-right{
   width: 60px;
   height: 60px;
-  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
 }
 
 .sidebar {
@@ -466,4 +470,9 @@ col2 {
 
 #dipositeMoney {
   display: none;
+}
+header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
 }

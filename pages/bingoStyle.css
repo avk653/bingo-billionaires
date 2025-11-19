@@ -11,7 +11,7 @@ body::before {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Courier New;
   color: #ccc;
   background: #111;
   display: flex;

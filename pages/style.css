@@ -277,7 +277,7 @@ header {
   text-align: center;
   margin-top: 75px;
   padding: 10px;
-  min-height: 500px;
+  min-height: auto; padding-bottom: 30px;
 
   border-style: solid;
   border-color: #29f237;
@@ -366,7 +366,7 @@ footer {
 }
 
 .submit2 {
-  margin-top: 100px;
+  margin-top: 20px; clear: both;
   background-color: #29f237;
   border-color: #21b82c;
 }
@@ -375,7 +375,7 @@ footer {
   float: left;
 }
 
-col2 {
+.col2 {
   float: right;
 }
 
@@ -475,4 +475,14 @@ header h1 {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
+}
+
+.cAccount::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#createAccount {
+  padding-bottom: 20px;
 }

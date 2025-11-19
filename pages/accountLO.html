@@ -1,134 +1,144 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href ="style.css">
-<script src="script.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href ="style.css">
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <!--sidebar that holds info about user-->
+        <div class = "sidebar">
+          <h2>Account</h2>
+            <p>Joe</p>
 
-<body>
-  <!-- sidebar that holds info about user-->
-<div class = "sidebar">
-<h2>Account</h2>
-<p>Joe</p>
-<h2>Ballance</h2>
-<p>£106.85</p>
-<h2>spending alowance</h2>
-<p>not set</p>
-<h2>points</h2>
-<p>22</p>
-<h2>winnings</h2>
-<p>£70.00</0>
-<h2>Leaderboard</h2>
-<p id = "one">1. micheal: £1002.52<br>
-<p>2. lewis: £985.55</p>
-</div>
+          <h2>Ballance</h2>
+            <p>£106.85</p>
 
-<!-- main holds the main part of the page-->
-<div class = "main">
-  <!--header holds the title-->
-<header>
-    <img src="moneybag.png" alt="Logo" class="logo-left">
-      <h1>Money Glitch Gambling</h1>
-      <img src="moneybag.png" alt="Logo" class="logo-right">
-</header>
+          <h2>spending alowance</h2>
+            <p>not set</p>
 
-<!--Nav hold the navagation bar (I havn't added the links yet)-->
-<div class = "nav">
-<hr class = "line">
-<a href = "bingo.html">Games</a>
-<a href = "accountsLI.html">Account</a>
-</div>
+          <h2>points</h2>
+            <p>22</p>
 
-<!-- base hold the first thing they will see when they go onto the site
-shows them the option to log in or create an account 
--->
-<section id = "base">
-    <div class = "content">
-<div class = "box" onClick = "createAccount()">
-<h2>create acount</h2>
-</div>
-<div class = "box"onClick = "logIn()">
-<h2>Login</h2>
-</div>
-</section>
+          <h2>winnings</h2>
+            <p>£70.00</0>
 
-<!--After they click sign in they will have to entere their username
-origonally not shown and has to click on log in
--->
-<section id = "signIn">
-<form>
- <label for="uername">Username</label><br>
- <input type="text" id="username" name="username" required placeholder = "username"><br>
- 
- <label for="password">Password</label><br>
- <input type="password" id="password" name="password" required placeholder = "Password"><br>
-  <input class = "submit1" type="submit" value="Log In">
-</form>
-<p onClick = "createAccount()" id = "green">Don't have an accoung <a href = "#"> Create one</a></p>
-</section>
+          <h2>Leaderboard</h2>
+            <p id = "one">1. micheal: £1002.52<br>
+            <p>2. lewis: £985.55</p>
+        </div>
+        
+        <!--main holds the main part of the page-->
+        <div class = "main">
+            <!--header holds the title-->
+          <header>
+            <img src="moneybag.png" alt="Logo" class="logo-left">
+            <h1>Money Glitch Gambling</h1>
+            <img src="moneybag.png" alt="Logo" class="logo-right">
+          </header>
 
-<!--After they click on create an account they will be shown all the things they need to add to create their account
-origonally not shown and has to click on create account
-may make it multiple stages as not to overwhelm the user
--->
-<section id = "createAccount">
-<h2>Create account</h2>
-<form class = "cAccount" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-    <!--Everything in the form is mandatory-->
-<div class = "col1">
-    <!--Personal details-->
-<label for="fName">Full Name</label><br>
- <input type="text" id="fName" name="fName" required placeholder = "enter name"><br>
- 
- <label for="eMail">Email</label><br>
- <input type="email" id="eMail" name="eMail" required placeholder = "enter email"><br>
- 
- <label for="DOB">Date of Birth</label><br>
- <input type="date" id="DOB" name="DOB" required><br>
- 
- <label for="uName">UserName</label><br>
- <input type="text" id="uName" name="uName" required placeholder = "Enter username"><br>
- 
- <label for="p1">Password</label><br>
- <input type="password" id="p1" name="p1" required placeholder = "Enter password"><br>
-
- <label for="p2">Password</label><br>
- <input type="password" id="p2" name="p2" required placeholder = "Confirm password"><br>
- 
- <label for="pCode">Post Code</label><br>
- <input type="text" id="pCode" name="pCode" required placeholder = "Enter postcode"><br>
- </div>
- 
- <div class = "col2">
-    <!-- bank details
-    may move to another page to make it less cluttered this would also help with the code to check the bank details
-    -->
- <label for="acNum">Account Number</label><br>
- <input type="number" id="acNum" name="acNum" required placeholder = "Enter account Number"<><br>
- 
- <label for="cardName">Name on Card</label><br>
- <input type="text" id="cardName" name="cardName" required placeholder = "Enter name on card"><br>
- 
- <label for="sCode">Sort Code</label><br>
- <input type="number" id="sCode" name="sCode" required placeholder = "enter sort code"><br>
- </div>
-
- <input class = "submit2" type="submit" value="Create Account">
- 
- 
- 
-</form>
-<p onClick = "logIn()">Already have an account <a href = "#"> Sign in</a></p>
-</section>
-
-</div>
-</div>
-</div>
-<footer>
-    <p>© 2025 Bingo Billionaire<br>
-    <small>please gamble responsibly</small></p>
-</footer>
-</body>
-</div>
+          <!--Nav hold the navagation bar-->
+          <div class = "nav">
+            <hr class = "line">
+            <a href = "bingo.html">Games</a>
+            <a href = "accountsLI.html">Account</a>
+          </div>
+        
+        <!--base hold the first thing they will see when they go onto the site shows them the option to log in or create an account-->
+        <section id = "base">
+            <div class = "content">
+        <div class = "box" onClick = "createAccount()">
+        <h2>create acount</h2>
+        </div>
+        <div class = "box"onClick = "logIn()">
+        <h2>Login</h2>
+        </div>
+        </section>
+        
+        <!--After they click sign in they will have to entere their username
+        origonally not shown and has to click on log in
+        -->
+        <section id = "signIn">
+        <form>
+         <label for="uername">Username</label><br>
+         <input type="text" id="username" name="username" required placeholder = "username"><br>
+         <br>
+            
+         <label for="password">Password</label><br>
+         <input type="password" id="password" name="password" required placeholder = "Password"><br>
+          <input class = "submit1" type="submit" value="Log In">
+        </form>
+        <p onClick = "createAccount()" id = "green">Don't have an accoung <a href = "#"> Create one</a></p>
+        </section>
+        
+        <!--After they click on create an account they will be shown all the things they need to add to create their account
+        origonally not shown and has to click on create account
+        may make it multiple stages as not to overwhelm the user
+        -->
+        <section id = "createAccount">
+        <h2>Create account</h2>
+        <form class = "cAccount" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <!--Everything in the form is mandatory-->
+        <div class = "col1">
+            <!--Personal details-->
+        <label for="fName">Full Name</label><br>
+         <input type="text" id="fName" name="fName" required placeholder = "enter name"><br>
+         <br>
+            
+         <label for="eMail">Email</label><br>
+         <input type="email" id="eMail" name="eMail" required placeholder = "enter email"><br>
+         <br>
+            
+         <label for="DOB">Date of Birth</label><br>
+         <input type="date" id="DOB" name="DOB" required><br>
+         <br>
+            
+         <label for="uName">UserName</label><br>
+         <input type="text" id="uName" name="uName" required placeholder = "Enter username"><br>
+         <br>
+            
+         <label for="p1">Password</label><br>
+         <input type="password" id="p1" name="p1" required placeholder = "Enter password"><br>
+         <br>
+            
+         <label for="p2">Password</label><br>
+         <input type="password" id="p2" name="p2" required placeholder = "Confirm password"><br>
+         <br>
+            
+         <label for="pCode">Post Code</label><br>
+         <input type="text" id="pCode" name="pCode" required placeholder = "Enter postcode"><br>
+         </div>
+         
+         <div class = "col2">
+            <!-- bank details
+            may move to another page to make it less cluttered this would also help with the code to check the bank details
+            -->
+         <label for="acNum">Account Number</label><br>
+         <input type="number" id="acNum" name="acNum" required placeholder = "Enter account Number"<><br>
+         <br>
+             
+         <label for="cardName">Name on Card</label><br>
+         <input type="text" id="cardName" name="cardName" required placeholder = "Enter name on card"><br>
+         <br>
+             
+         <label for="sCode">Sort Code</label><br>
+         <input type="number" id="sCode" name="sCode" required placeholder = "enter sort code"><br>
+         </div>
+        
+         <input class = "submit2" type="submit" value="Create Account">
+         
+        </form>
+        <p onClick = "logIn()">Already have an account <a href = "#"> Sign in</a></p>
+        </section>
+        
+        </div>
+        </div>
+        </div>
+        <footer>
+            <p>© 2025 MGG Bingo Billionaire<br>
+            <small>please gamble responsibly</small></p>
+        </footer>
+    </body>
+    </div>

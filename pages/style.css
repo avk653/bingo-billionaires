@@ -496,3 +496,15 @@ header h1 {
 #createAccount {
   padding-bottom: 20px;
 }
+
+#createAccount label {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#createAccount input {
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}

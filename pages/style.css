@@ -222,10 +222,18 @@ header {
   text-align: center;
 }
 
-.header-logo{
+.logo-left{
   width: 60px;
-  height: 60px
+  height: 60px;
+  text-align: left;
 }
+
+.logo-right{
+  width: 60px;
+  height: 60px;
+  float: right;
+}
+
 .sidebar {
   width: 200px;
   float: left;
@@ -458,11 +466,4 @@ col2 {
 
 #dipositeMoney {
   display: none;
-}
-.header-logo-left {
-        margin-right: 15px;
-}
-
-.header-logo-right {
-        margin-left: 15px;
 }

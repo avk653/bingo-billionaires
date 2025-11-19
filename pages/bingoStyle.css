@@ -196,9 +196,12 @@ button {
 }
 
 footer {
+  color: #031204;
+  background-color: #29f237;
+  width: 800px;
+  margin: auto;
+  margin-top: 10px;
   text-align: center;
-  padding: 10px;
-  font-size: 12px;
 }
 
 .right {
